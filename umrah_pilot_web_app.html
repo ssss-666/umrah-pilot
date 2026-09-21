@@ -1,21 +1,1140 @@
 <!doctype html>
 <html lang="th">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#064e3b"><meta name="description" content="คู่มืออุมเราะฮ์แบบออฟไลน์ พร้อมตัวติดตามความคืบหน้า"><link rel="manifest" href="manifest.webmanifest"><title>Umrah Pilot</title>
-<style>
-:root{--deep:#022c22;--primary:#064e3b;--accent:#10b981;--gold:#d97706;--bg:#f1f5f9;--card:#fff;--text:#0f172a;--muted:#64748b;--danger:#b91c1c}*{box-sizing:border-box}html{font-family:system-ui,-apple-system,"Noto Sans Thai",sans-serif;background:#0f172a;color:var(--text)}body{margin:0;background:var(--bg);min-height:100vh}button,input{font:inherit}button{cursor:pointer}.app{width:min(100%,560px);margin:auto;min-height:100vh;background:var(--bg);padding-bottom:82px}.top{position:sticky;top:0;z-index:5;background:var(--deep);color:#fff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}.brand{display:flex;gap:10px;align-items:center}.logo{font-size:25px}.top h1{font-size:17px;margin:0}.top p{font-size:11px;color:#a7f3d0;margin:2px 0 0}.actions{display:flex;gap:6px}.icon{background:#064e3b;border:1px solid #166534;color:#fff;border-radius:10px;padding:8px;min-width:40px}.banner{margin:12px 16px;background:linear-gradient(135deg,var(--primary),#022c22);color:#fff;border-radius:18px;padding:16px}.banner h2{margin:0 0 4px;font-size:18px}.banner p{margin:0;color:#d1fae5;font-size:12px}.progress{height:10px;background:#d1d5db;border-radius:99px;overflow:hidden;margin:10px 0 6px}.progress>i{display:block;height:100%;background:var(--accent);transition:.3s}.progress-label{font-size:12px;color:#d1fae5}.content{padding:0 16px}.card{background:var(--card);border:1px solid #e2e8f0;border-radius:18px;padding:15px;margin:12px 0;box-shadow:0 2px 8px #0f172a0a}.card h2,.card h3{margin:0 0 10px}.muted{color:var(--muted);font-size:12px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.stage{border:1px solid #dbeafe;border-radius:14px;padding:12px;background:#f8fafc;text-align:left}.stage strong{display:block;font-size:13px}.stage span{font-size:11px;color:var(--muted)}.stage.done{background:#ecfdf5;border-color:#6ee7b7}.stage.current{outline:3px solid #fbbf24}.btn{border:0;border-radius:12px;padding:11px 14px;font-weight:700;background:var(--primary);color:#fff}.btn.secondary{background:#e2e8f0;color:var(--text)}.btn.gold{background:#fef3c7;color:#78350f}.btn.danger{background:#fee2e2;color:var(--danger)}.btn:focus-visible,.icon:focus-visible,.nav button:focus-visible,input:focus-visible{outline:3px solid #fbbf24;outline-offset:2px}.row{display:flex;justify-content:space-between;align-items:center;gap:10px}.check{display:flex;gap:10px;align-items:flex-start;padding:10px 0;font-size:13px;border-bottom:1px solid #f1f5f9}.check:last-child{border:0}.check input{width:20px;height:20px;accent-color:var(--accent);flex:none}.counter{text-align:center}.number{font-size:72px;font-weight:800;color:var(--primary);line-height:1}.dots{display:flex;justify-content:center;gap:7px;margin:14px 0}.dot{width:27px;height:27px;border-radius:50%;background:#e2e8f0;display:grid;place-items:center;font-size:12px}.dot.active{background:var(--primary);color:#fff}.dot.done{background:#a7f3d0;color:#064e3b}.hold{width:100%;min-height:76px;position:relative;overflow:hidden}.hold i{position:absolute;inset:0 auto 0 0;width:0;background:#34d39966;transition:width .05s}.hold span{position:relative}.tabs{display:flex;gap:8px;margin:12px 0}.tabs .btn{flex:1}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,560px);display:flex;background:#fff;border-top:1px solid #cbd5e1;z-index:6;padding:7px max(7px,env(safe-area-inset-left)) calc(7px + env(safe-area-inset-bottom));box-shadow:0 -3px 12px #0f172a15}.nav button{flex:1;border:0;background:none;color:#64748b;font-size:10px;padding:6px 2px;border-radius:10px}.nav button.active{color:var(--primary);font-weight:800;background:#ecfdf5}.nav b{display:block;font-size:18px}.hidden{display:none!important}.modal{position:fixed;inset:0;background:#000b;z-index:10;display:grid;place-items:center;padding:16px}.modal>div{background:#fff;border-radius:20px;padding:18px;width:min(100%,480px);max-height:90vh;overflow:auto}.modal input{width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px;margin:5px 0 12px}.notice{font-size:11px;color:#92400e;background:#fffbeb;border:1px solid #fcd34d;border-radius:12px;padding:10px;margin-top:10px}main[aria-live]{min-height:360px}@media(max-width:380px){.content,.banner{margin-left:10px;margin-right:10px}.content{padding:0}.top{padding-left:10px;padding-right:10px}.number{font-size:62px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
-</style></head>
-<body><div class="app" id="app"><header class="top"><div class="brand"><span class="logo" aria-hidden="true">🕋</span><div><h1>Umrah Pilot</h1><p>คู่มืออุมเราะฮ์แบบออฟไลน์</p></div></div><div class="actions"><button class="icon" id="installBtn" aria-label="ติดตั้งแอป" hidden>⬇️</button><button class="icon" id="settingsBtn" aria-label="ตั้งค่า">⚙️</button></div></header><section class="banner" aria-labelledby="progressTitle"><h2 id="progressTitle">ความคืบหน้าอุมเราะฮ์</h2><p id="progressText">เริ่มเตรียมตัวให้พร้อม</p><div class="progress" role="progressbar" aria-label="ความคืบหน้า" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="progressBar"></i></div><div class="progress-label" id="progressPercent">0%</div></section><main id="main" class="content" aria-live="polite"></main><nav class="nav" aria-label="เมนูหลัก"><button data-tab="home" class="active"><b>🏠</b>ภาพรวม</button><button data-tab="miqat"><b>🧳</b>มีกอต</button><button data-tab="tawaf"><b>🕋</b>เฏาะวาฟ</button><button data-tab="sai"><b>🏃</b>สะแอ</button><button data-tab="help"><b>🚨</b>ช่วยเหลือ</button></nav></div>
-<div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div><div class="row"><h2 id="modalTitle">ตั้งค่า</h2><button class="icon" id="closeModal" aria-label="ปิด">✕</button></div><label for="hotel">ชื่อโรงแรม</label><input id="hotel" autocomplete="organization"><label for="phone">เบอร์หัวหน้ากลุ่ม</label><input id="phone" type="tel" autocomplete="tel"><div class="row"><button class="btn" id="saveSettings">บันทึก</button><button class="btn danger" id="resetBtn">เริ่มข้อมูลใหม่</button></div><p class="notice">ข้อมูลศาสนาในแอปเป็นคู่มือเบื้องต้น ความเห็นทางฟิกฮ์อาจแตกต่างกัน โปรดสอบถามผู้รู้ที่ไว้วางใจได้ โดยเฉพาะกรณีอิชติรอต การชดเชย และข้อจำกัดเฉพาะบุคคล</p></div></div>
-<script>
-'use strict';
-const KEY='umrah-pilot-v2';const defaults={gender:'male',hotel:'Swissôtel Makkah',phone:'+66 81-234-5678',miqat:{hygiene:false,ghusl:false,attire:false,perfume:false,prayer:false,niyyah:false},tawaf:0,sai:0,tab:'home'};let state=load();let holdTimer=null,holdStarted=0,holdKind=null,deferredInstall=null;
-function load(){try{return {...defaults,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch{return structuredClone(defaults)}}function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch{}}function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function overall(){let mi=Object.values(state.miqat).filter(Boolean).length/6;return Math.round((mi+state.tawaf/7+state.sai/7+(state.sai===7?1:0))/3*100)}
-function render(){const p=overall();document.getElementById('progressBar').style.width=p+'%';document.getElementById('progressPercent').textContent=p+'%';document.querySelector('[role=progressbar]').setAttribute('aria-valuenow',p);document.getElementById('progressText').textContent=p===100?'อุมเราะฮ์เสร็จสิ้นแล้ว':p?'ทำต่อจากความคืบหน้าล่าสุดได้ทุกเมื่อ':'เริ่มจากตรวจรายการมีกอต';document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.tab===state.tab));document.getElementById('main').innerHTML=views[state.tab]();bind();save()}
-const views={home:()=>`<section class="card"><h2>ยินดีต้อนรับ</h2><p class="muted">ระบบบันทึกความคืบหน้าไว้ในเครื่องนี้ ใช้งานต่อได้แม้ไม่มีอินเทอร์เน็ต</p><div class="grid"><button class="stage ${state.miqat.niyyah?'done':''}" data-go="miqat"><strong>1. มีกอต</strong><span>${Object.values(state.miqat).filter(Boolean).length}/6 รายการ</span></button><button class="stage ${state.tawaf===7?'done':''} ${state.tawaf>0&&state.tawaf<7?'current':''}" data-go="tawaf"><strong>2. เฏาะวาฟ</strong><span>${state.tawaf}/7 รอบ</span></button><button class="stage ${state.sai===7?'done':''} ${state.sai>0&&state.sai<7?'current':''}" data-go="sai"><strong>3. สะแอ</strong><span>${state.sai}/7 เที่ยว</span></button><button class="stage ${state.sai===7?'done':''}"><strong>4. ตะฮัลลุล</strong><span>${state.sai===7?'พร้อมทำขั้นตอนสุดท้าย':'หลังสะแอครบ 7 เที่ยว'}</span></button></div></section><section class="card"><h3>ทำต่อจากครั้งล่าสุด</h3><p class="muted">${state.tab==='home'?'เลือกขั้นตอนจากด้านบน':`ขั้นตอนปัจจุบัน: ${state.tab}`}</p><button class="btn" data-go="${state.tawaf<7?'tawaf':state.sai<7?'sai':'miqat'}">ไปต่อ</button><button class="btn secondary" id="resetInline">รีเซ็ตความคืบหน้า</button></section><section class="card"><h3>ข้อควรรู้</h3><p class="muted">เวลาละหมาดและข้อมูลสถานที่อาจเปลี่ยนแปลง ควรตรวจสอบประกาศทางการในพื้นที่</p></section>`,miqat:()=>`<section class="card"><h2>มีกอตและการเตรียมเอียะห์รอม</h2><p class="muted">เพศ: ${state.gender==='male'?'บุรุษ':'สตรี'} — เลือกเพศในตั้งค่าไม่ได้ในรุ่นนี้ ใช้ข้อความที่เหมาะสมกับตนเอง</p>${check('hygiene','ตัดเล็บและจัดการขนให้เรียบร้อยก่อนครองเอียะห์รอม')}${check('ghusl','อาบน้ำและเตรียมความสะอาดร่างกาย')}${check('attire','เตรียมเครื่องแต่งกายเอียะห์รอมให้เหมาะสมกับเพศและหลักปฏิบัติ')}${check('perfume','ใช้น้ำหอมก่อนครองเอียะห์รอมตามหลักที่ผู้รู้แนะนำ และหลีกเลี่ยงหลังเริ่มครอง')}${check('prayer','ละหมาด 2 ร็อกอะฮ์เมื่อสะดวก — ไม่ควรฝืนหากอยู่บนเครื่องบิน')}${check('niyyah','กล่าวเหนียตเมื่อถึงแนวมีกอตตามคำแนะนำของผู้รู้')}<div class="notice">มีกอตและรายละเอียดการแต่งกายมีเงื่อนไขตามสถานการณ์และมัซฮับ ควรยึดคำแนะนำของผู้รู้/หัวหน้ากลุ่ม ไม่ใช้แอปแทนคำวินิจฉัยเฉพาะกรณี</div></section>`,tawaf:counter('เฏาะวาฟ','รอบ',state.tawaf,'จบเฏาะวาฟครบ 7 รอบแล้ว ให้ปฏิบัติตามคู่มือและคำแนะนำของผู้รู้','tawaf'),sai:counter('สะแอ','เที่ยว',state.sai,'เมื่อครบ 7 เที่ยว ให้ทำตะฮัลลุลตามหลักปฏิบัติ','sai'),help:()=>`<section class="card"><h2>บัตรขอความช่วยเหลือ</h2><p class="muted">โรงแรม: ${esc(state.hotel)}<br>หัวหน้ากลุ่ม: ${esc(state.phone)}</p><button class="btn" data-speak="أنا تائه، أرجو مساعدتي في الوصول إلى فندقي">🔊 ฉันหลงทาง กรุณาช่วยฉัน</button><a class="btn secondary" href="tel:997">📞 โทรฉุกเฉินการแพทย์ 997</a><a class="btn secondary" href="tel:911">📞 โทรฉุกเฉิน 911</a><div class="notice">หากมีอาการฉุกเฉิน ให้ขอความช่วยเหลือจากเจ้าหน้าที่ในพื้นที่และโทรหมายเลขฉุกเฉินของซาอุดีอาระเบีย</div></section>`};
-function check(k,t){return `<label class="check"><input type="checkbox" data-check="${k}" ${state.miqat[k]?'checked':''}><span>${t}</span></label>`}function counter(title,unit,note,kind){return `<section class="card counter"><h2>${title}</h2><p class="muted">บันทึกแล้ว ${n} จาก 7 ${unit}</p><div class="number" aria-label="${n} จาก 7">${n}</div><div class="dots">${[1,2,3,4,5,6,7].map(i=>`<span class="dot ${i<=n?'done':''} ${i===n+1?'active':''}">${i<=n?'✓':i}</span>`).join('')}</div><button class="btn hold" data-hold="${kind}"><i></i><span>กดค้าง 1 วินาที เพื่อบันทึก${unit}${n<7?'ที่ '+(n+1):'ที่ 7'}</span></button><button class="btn secondary" data-undo="${kind}">↩️ ย้อนกลับ 1 ${unit}</button><p class="muted">${note}</p></section>`}
-function bind(){document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>{state.tab=b.dataset.go;render()});document.querySelectorAll('[data-check]').forEach(e=>e.onchange=()=>{state.miqat[e.dataset.check]=e.checked;render()});document.querySelectorAll('[data-hold]').forEach(e=>{e.onpointerdown=ev=>{ev.preventDefault();holdKind=e.dataset.hold;holdStarted=Date.now();const bar=e.querySelector('i');holdTimer=setInterval(()=>{let x=Math.min((Date.now()-holdStarted)/1000,1);bar.style.width=x*100+'%';if(x>=1){clearInterval(holdTimer);holdTimer=null;state[holdKind]=Math.min(7,state[holdKind]+1);render();if(navigator.vibrate)navigator.vibrate([70,40,70])}},40)};['pointerup','pointercancel','pointerleave'].forEach(x=>e.addEventListener(x,()=>{if(holdTimer){clearInterval(holdTimer);holdTimer=null;render()}}))});document.querySelectorAll('[data-undo]').forEach(b=>b.onclick=()=>{state[b.dataset.undo]=Math.max(0,state[b.dataset.undo]-1);render()});document.querySelectorAll('[data-speak]').forEach(b=>b.onclick=()=>speak(b.dataset.speak));document.getElementById('resetInline')?.addEventListener('click',reset)}
-function speak(t){if(!('speechSynthesis'in window))return alert('อุปกรณ์นี้ไม่รองรับเสียงอ่าน');speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.lang='ar-SA';u.rate=.85;speechSynthesis.speak(u)}function reset(){if(confirm('ต้องการลบความคืบหน้าทั้งหมดหรือไม่?')){state=structuredClone(defaults);render()}}
-document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{state.tab=b.dataset.tab;render()});document.getElementById('settingsBtn').onclick=()=>{hotel.value=state.hotel;phone.value=state.phone;modal.classList.remove('hidden');hotel.focus()};document.getElementById('closeModal').onclick=()=>modal.classList.add('hidden');document.getElementById('saveSettings').onclick=()=>{state.hotel=hotel.value.trim()||defaults.hotel;state.phone=phone.value.trim()||defaults.phone;modal.classList.add('hidden');render()};document.getElementById('resetBtn').onclick=reset;modal.onclick=e=>{if(e.target===modal)modal.classList.add('hidden')};window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstall=e;installBtn.hidden=false});installBtn.onclick=async()=>{if(deferredInstall){deferredInstall.prompt();deferredInstall=null;installBtn.hidden=true}};if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));render();
-</script></body></html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#064e3b">
+  <meta name="description" content="Umrah Pilot - คู่มืออุมเราะฮ์แบบออฟไลน์สำหรับผู้แสวงบุญมือใหม่">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>Umrah Pilot</title>
+  <style>
+    :root {
+      --deep: #022c22;
+      --primary: #064e3b;
+      --primary-soft: #ecfdf5;
+      --accent: #10b981;
+      --gold: #d97706;
+      --card: #ffffff;
+      --bg: #f3f6f8;
+      --text: #0f172a;
+      --muted: #64748b;
+      --line: #dfe7ee;
+      --warning-bg: #fff7ed;
+      --warning-border: #fdba74;
+      --danger: #b91c1c;
+      --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+    html { background: #0f172a; color: var(--text); }
+    body {
+      margin: 0;
+      font-family: "Noto Sans Thai", "Segoe UI", Tahoma, sans-serif;
+      background: var(--bg);
+      min-height: 100vh;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+    a { color: inherit; text-decoration: none; }
+
+    .app {
+      width: min(100%, 560px);
+      min-height: 100vh;
+      margin: 0 auto;
+      background: var(--bg);
+      padding-bottom: 96px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: var(--deep);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      box-shadow: 0 4px 14px rgba(2, 44, 34, 0.25);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #10b981, #059669);
+      font-size: 22px;
+      box-shadow: inset 0 2px 8px rgba(255,255,255,0.2);
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 1.05rem;
+      letter-spacing: 0.02em;
+    }
+
+    .brand p {
+      margin: 2px 0 0;
+      color: #d1fae5;
+      font-size: 0.68rem;
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .icon-button {
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(6, 78, 59, 0.8);
+      color: white;
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      font-size: 1rem;
+    }
+
+    .summary-banner {
+      margin: 14px 16px 0;
+      background: linear-gradient(135deg, #064e3b, #022c22);
+      border-radius: 20px;
+      padding: 16px;
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .summary-banner h2 {
+      margin: 0 0 6px;
+      font-size: 1.05rem;
+    }
+
+    .summary-banner p {
+      margin: 0;
+      color: #d1fae5;
+      font-size: 0.78rem;
+    }
+
+    .progress {
+      margin-top: 10px;
+      height: 12px;
+      background: rgba(255,255,255,0.18);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #34d399, #facc15);
+      border-radius: inherit;
+      transition: width 0.2s ease;
+    }
+
+    .progress-label {
+      margin-top: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.72rem;
+      color: #dcfce7;
+    }
+
+    .content {
+      padding: 12px 16px 0;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+      margin-bottom: 14px;
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      font-size: 1rem;
+    }
+
+    .muted {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.76rem;
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .stage {
+      border: 1px solid #d1f2e6;
+      background: #f8fffb;
+      border-radius: 14px;
+      padding: 12px 10px;
+      text-align: left;
+      color: var(--text);
+    }
+
+    .stage strong {
+      display: block;
+      font-size: 0.84rem;
+      margin-bottom: 4px;
+    }
+
+    .stage span {
+      display: block;
+      font-size: 0.68rem;
+      color: var(--muted);
+    }
+
+    .stage.done {
+      background: #ecfdf5;
+      border-color: #86efac;
+    }
+
+    .stage.current {
+      outline: 3px solid rgba(250, 204, 21, 0.25);
+      border-color: #facc15;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 8px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button,
+    .secondary-button,
+    .danger-button,
+    .gold-button {
+      border: 0;
+      border-radius: 12px;
+      padding: 11px 14px;
+      font-weight: 700;
+      min-height: 44px;
+      transition: transform 0.1s ease, filter 0.2s ease;
+    }
+
+    .button:active,
+    .secondary-button:active,
+    .danger-button:active,
+    .gold-button:active {
+      transform: translateY(1px);
+    }
+
+    .button {
+      background: var(--primary);
+      color: white;
+      flex: 1 1 140px;
+    }
+
+    .secondary-button {
+      background: #e2e8f0;
+      color: var(--text);
+      flex: 1 1 140px;
+    }
+
+    .gold-button {
+      background: #fef3c7;
+      color: #7c2d12;
+      flex: 1 1 140px;
+    }
+
+    .danger-button {
+      background: #fee2e2;
+      color: var(--danger);
+      flex: 1 1 140px;
+    }
+
+    .notice {
+      margin-top: 12px;
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+      color: #7c2d12;
+      padding: 10px 12px;
+      border-radius: 12px;
+      line-height: 1.5;
+      font-size: 0.72rem;
+    }
+
+    .checklist {
+      display: grid;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .check-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      border-bottom: 1px solid #f1f5f9;
+      padding-bottom: 8px;
+    }
+
+    .check-item:last-child { border-bottom: 0; padding-bottom: 0; }
+
+    .check-item input {
+      width: 20px;
+      height: 20px;
+      accent-color: var(--accent);
+      margin-top: 1px;
+      flex: none;
+    }
+
+    .check-item span {
+      color: var(--text);
+      font-size: 0.78rem;
+      line-height: 1.6;
+    }
+
+    .counter-panel {
+      text-align: center;
+    }
+
+    .counter-value {
+      font-size: clamp(3rem, 13vw, 5rem);
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+      margin: 14px 0 10px;
+    }
+
+    .dots {
+      display: flex;
+      justify-content: center;
+      gap: 7px;
+      flex-wrap: wrap;
+      margin: 10px 0 18px;
+    }
+
+    .dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #e2e8f0;
+      color: var(--muted);
+      display: grid;
+      place-items: center;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    .dot.done {
+      background: #bbf7d0;
+      color: #065f46;
+    }
+
+    .dot.active {
+      background: var(--primary);
+      color: white;
+    }
+
+    .hold-button {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      min-height: 70px;
+      padding: 0;
+      background: var(--primary);
+      color: white;
+      border-radius: 16px;
+      border: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .hold-button span {
+      position: relative;
+      z-index: 1;
+      display: block;
+      padding: 0 12px;
+      line-height: 1.3;
+    }
+
+    .hold-button .progress-fill {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 0%;
+      background: rgba(52, 211, 153, 0.45);
+      transition: width 0.05s linear;
+      z-index: 0;
+    }
+
+    .help-grid {
+      display: grid;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .help-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px 14px;
+    }
+
+    .help-item .left {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      min-width: 0;
+    }
+
+    .emoji {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      font-size: 1.2rem;
+      background: #f1f5f9;
+      flex: none;
+    }
+
+    .help-copy {
+      min-width: 0;
+    }
+
+    .help-copy strong {
+      display: block;
+      font-size: 0.76rem;
+      margin-bottom: 2px;
+    }
+
+    .help-copy span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.68rem;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+
+    .arrow {
+      font-weight: 700;
+      color: #94a3b8;
+      font-size: 1rem;
+    }
+
+    .nav {
+      position: fixed;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: min(100%, 560px);
+      display: flex;
+      align-items: stretch;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid #dde5ee;
+      box-shadow: 0 -4px 18px rgba(15, 23, 42, 0.12);
+      z-index: 30;
+    }
+
+    .nav button {
+      flex: 1 1 0;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      padding: 8px 4px 12px;
+      text-align: center;
+      font-size: 0.64rem;
+      font-weight: 700;
+    }
+
+    .nav button.active {
+      color: var(--primary);
+      background: #ecfdf5;
+    }
+
+    .nav button .nav-emoji {
+      display: block;
+      font-size: 1.12rem;
+      margin-bottom: 2px;
+    }
+
+    .hidden { display: none !important; }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.7);
+      display: grid;
+      place-items: center;
+      padding: 16px;
+      z-index: 40;
+    }
+
+    .modal-window {
+      width: min(100%, 480px);
+      background: white;
+      border-radius: 20px;
+      padding: 18px 18px 16px;
+      box-shadow: 0 25px 50px rgba(15,23,42,0.2);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .modal-header h3 {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .close-button {
+      border: 0;
+      background: #f1f5f9;
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+    .field {
+      margin-bottom: 12px;
+    }
+
+    .field label {
+      display: block;
+      font-weight: 700;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .field input {
+      width: 100%;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      min-height: 44px;
+      padding: 10px 12px;
+      font-size: 0.82rem;
+      background: #fff;
+    }
+
+    .field input:focus,
+    .button:focus,
+    .secondary-button:focus,
+    .danger-button:focus,
+    .gold-button:focus,
+    .icon-button:focus,
+    .nav button:focus,
+    .close-button:focus,
+    .hold-button:focus,
+    .stage:focus {
+      outline: 3px solid rgba(250, 204, 21, 0.45);
+      outline-offset: 2px;
+    }
+
+    .footer-note {
+      margin-top: 12px;
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 0.69rem;
+      line-height: 1.5;
+      color: #7c2d12;
+      background: #fff7ed;
+      border: 1px solid #fdba74;
+    }
+
+    @media (max-width: 380px) {
+      .content { padding-left: 10px; padding-right: 10px; }
+      .summary-banner { margin-left: 10px; margin-right: 10px; }
+      .grid { grid-template-columns: 1fr; }
+      .button-row { flex-direction: column; }
+      .button, .secondary-button, .danger-button, .gold-button { width: 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">🕋</div>
+        <div>
+          <h1>Umrah Pilot</h1>
+          <p>คู่มืออุมเราะฮ์แบบออฟไลน์</p>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <button id="soundToggle" class="icon-button" type="button" aria-label="เปิด/ปิดเสียง">🔊</button>
+        <button id="installBtn" class="icon-button hidden" type="button" aria-label="ติดตั้งแอป">⬇️</button>
+        <button id="settingsBtn" class="icon-button" type="button" aria-label="เปิดการตั้งค่า">⚙️</button>
+      </div>
+    </header>
+
+    <section class="summary-banner" aria-live="polite">
+      <h2>ความคืบหน้าอุมเราะฮ์</h2>
+      <p id="summaryText">เริ่มต้นด้วยการเตรียมตัวก่อนมีกอต</p>
+      <div class="progress" aria-label="ความคืบหน้า" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+      <div class="progress-label">
+        <span>ความคืบหน้าโดยรวม</span>
+        <strong id="progressValue">0%</strong>
+      </div>
+    </section>
+
+    <main id="screen" class="content" aria-live="polite"></main>
+
+    <nav class="nav" aria-label="เมนูหลัก">
+      <button type="button" class="nav-btn active" data-tab="home">
+        <span class="nav-emoji">🏠</span>
+        ภาพรวม
+      </button>
+      <button type="button" class="nav-btn" data-tab="miqat">
+        <span class="nav-emoji">🧳</span>
+        มีกอต
+      </button>
+      <button type="button" class="nav-btn" data-tab="tawaf">
+        <span class="nav-emoji">🕋</span>
+        เฏาะวาฟ
+      </button>
+      <button type="button" class="nav-btn" data-tab="sai">
+        <span class="nav-emoji">🏃</span>
+        สะแอ
+      </button>
+      <button type="button" class="nav-btn" data-tab="help">
+        <span class="nav-emoji">🚨</span>
+        ช่วยเหลือ
+      </button>
+    </nav>
+  </div>
+
+  <div id="settingsModal" class="modal hidden" aria-modal="true" role="dialog" aria-labelledby="settingsTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 id="settingsTitle">ตั้งค่าข้อมูลส่วนตัว</h3>
+        <button type="button" id="closeModalBtn" class="close-button" aria-label="ปิดหน้าต่าง">✕</button>
+      </div>
+
+      <div class="field">
+        <label for="hotelInput">ชื่อโรงแรม</label>
+        <input id="hotelInput" type="text" value="Swissôtel Makkah" autocomplete="organization">
+      </div>
+
+      <div class="field">
+        <label for="phoneInput">เบอร์หัวหน้ากลุ่ม / แซะห์</label>
+        <input id="phoneInput" type="tel" value="+66 81-234-5678" autocomplete="tel">
+      </div>
+
+      <div class="button-row">
+        <button id="saveSettingsBtn" type="button" class="button">บันทึกข้อมูล</button>
+        <button id="resetDataBtn" type="button" class="danger-button">รีเซ็ตข้อมูล</button>
+      </div>
+
+      <div class="footer-note">
+        ข้อมูลทางศาสนาในแอปนี้เป็นคำแนะนำทั่วไปเพื่อช่วยเตรียมตัวและติดตามขั้นตอน ไม่ใช่คำวินิจฉัยเฉพาะกรณี ผู้แสวงบุญควรปรึกษาผู้รู้ที่เชื่อถือได้ และยึดคำแนะนำของหัวหน้ากลุ่ม/อุละมาอ์ในพื้นที่เสมอ
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const STORAGE_KEY = 'umrah-pilot-v1';
+    const defaults = {
+      tab: 'home',
+      hotel: 'Swissôtel Makkah',
+      phone: '+66 81-234-5678',
+      sound: true,
+      gender: 'male',
+      miqat: {
+        hygiene: false,
+        ghusl: false,
+        attire: false,
+        perfume: false,
+        prayer: false,
+        niyyah: false
+      },
+      tawaf: 0,
+      sai: 0,
+      completed: false
+    };
+
+    let state = loadState();
+    let installPrompt = null;
+    let holdSession = null;
+
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return structuredClone(defaults);
+        const parsed = JSON.parse(raw);
+        return {
+          ...structuredClone(defaults),
+          ...parsed,
+          miqat: { ...structuredClone(defaults.miqat), ...(parsed.miqat || {}) }
+        };
+      } catch (error) {
+        return structuredClone(defaults);
+      }
+    }
+
+    function saveState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      } catch (error) {
+        // ignore write failures for private mode or storage limits
+      }
+    }
+
+    function clamp(value, min, max) {
+      return Math.min(Math.max(value, min), max);
+    }
+
+    function progressPercent() {
+      const stageScore = (
+        Object.values(state.miqat).filter(Boolean).length / Object.keys(state.miqat).length +
+        state.tawaf / 7 +
+        state.sai / 7
+      ) / 3;
+      return Math.round(stageScore * 100);
+    }
+
+    function updateSummary() {
+      const percent = progressPercent();
+      const bar = document.getElementById('progressBar');
+      const label = document.getElementById('progressValue');
+      const text = document.getElementById('summaryText');
+      bar.style.width = percent + '%';
+      label.textContent = percent + '%';
+      const progress = document.querySelector('.progress');
+      progress.setAttribute('aria-valuenow', String(percent));
+
+      if (state.completed || (state.tawaf >= 7 && state.sai >= 7)) {
+        text.textContent = 'อุมเราะฮ์เสร็จสิ้นแล้ว — ตรวจสอบให้แน่ใจว่าทำตะฮัลลุลและปฏิบัติตามคำแนะนำของผู้รู้';
+      } else if (state.tawaf > 0 || state.sai > 0 || Object.values(state.miqat).some(Boolean)) {
+        text.textContent = 'กำลังทำต่อจากความคืบหน้าล่าสุด — ควรปฏิบัติตามขั้นตอนทีละตอน';
+      } else {
+        text.textContent = 'เริ่มต้นด้วยการเตรียมตัวก่อนมีกอต';
+      }
+    }
+
+    function makeStage(tag, title, subtitle, done, current) {
+      return `
+        <button type="button" class="stage ${done ? 'done' : ''} ${current ? 'current' : ''}" data-stage="${tag}">
+          <strong>${title}</strong>
+          <span>${subtitle}</span>
+        </button>
+      `;
+    }
+
+    function renderHome() {
+      const miqatDone = Object.values(state.miqat).filter(Boolean).length;
+      const miqatTotal = Object.keys(state.miqat).length;
+      const afterTawaf = state.tawaf >= 7;
+      const afterSai = state.sai >= 7;
+
+      return `
+        <section class="card">
+          <h3>ภาพรวมการเตรียมตัว</h3>
+          <div class="grid">
+            ${makeStage('miqat', '1. มีกอต', `${miqatDone}/${miqatTotal} รายการ`, miqatDone === miqatTotal, state.tab === 'miqat')}
+            ${makeStage('tawaf', '2. เฏาะวาฟ', `${state.tawaf}/7 รอบ`, afterTawaf, state.tab === 'tawaf')}
+            ${makeStage('sai', '3. สะแอ', `${state.sai}/7 เที่ยว`, afterSai, state.tab === 'sai')}
+            ${makeStage('help', '4. การช่วยเหลือ', state.sai >= 7 ? 'พร้อมตะฮัลลุล' : 'เตรียมพร้อมอยู่เสมอ', state.sai >= 7, false)}
+          </div>
+        </section>
+
+        <section class="card">
+          <h3>ทำต่อจากครั้งล่าสุด</h3>
+          <p class="muted">สถานะปัจจุบัน: ${state.tab === 'home' ? 'ภาพรวม' : state.tab}</p>
+          <div class="button-row">
+            <button type="button" class="button" data-open-stage="${state.tawaf < 7 ? 'tawaf' : state.sai < 7 ? 'sai' : 'miqat'}">ไปต่อ</button>
+            <button type="button" class="secondary-button" id="reset-inline-btn">รีเซ็ตความคืบหน้า</button>
+          </div>
+        </section>
+
+        <section class="card">
+          <h3>ข้อควรรู้</h3>
+          <p class="muted">- ตรวจสอบเวลาหรือคำแนะนำจากผู้รู้ในพื้นที่เสมอเมื่อถึงจุดปฏิบัติ<br>- ควรใช้แอปนี้เป็นตัวช่วยติดตามและเตรียมตัว ไม่ใช่คำวินิจฉัยทางฟิกฮ์อย่างเด็ดขาด</p>
+        </section>
+      `;
+    }
+
+    function renderMiqat() {
+      const items = [
+        ['hygiene', 'ตัดเล็บ โกนหนวดและขนตามจุดซ่อนเร้นให้เรียบร้อย'],
+        ['ghusl', 'อาบน้ำสุนัตเอียะห์รอม / ทำความสะอาดร่างกาย'],
+        ['attire', 'เตรียมเครื่องแต่งกายเอียะห์รอมให้ถูกต้องตามเพศและหลักปฏิบัติ'],
+        ['perfume', 'ใช้น้ำหอมก่อนเริ่มครองเอียะห์รอมตามคำแนะนำที่ระมัดระวัง'],
+        ['prayer', 'ละหมาดสุนัตเอียะห์รอม 2 ร็อกอะฮ์ หากสะดวกและไม่เป็นภาระ'],
+        ['niyyah', 'กล่าวเหนียต ณ แนวมีกอต พร้อมเปล่งวาจาหรือมีจิตใจให้ชัดเจน']
+      ];
+
+      return `
+        <section class="card">
+          <h3>มีกอตและขั้นตอนก่อนครองเอียะห์รอม</h3>
+          <div class="checklist">
+            ${items.map(([key, label]) => `
+              <label class="check-item">
+                <input type="checkbox" data-check="${key}" ${state.miqat[key] ? 'checked' : ''}>
+                <span>${label}</span>
+              </label>
+            `).join('')}
+          </div>
+          <div class="notice">สำหรับผู้ป่วย นักกีฬาหรือผู้ที่มีข้อจำกัด ให้เลือกคำแนะนำแบบมีเงื่อนไข (อิชติรอต) และปรึกษาผู้รู้ก่อนตัดสินใจ</div>
+        </section>
+      `;
+    }
+
+    function renderCounter(kind, label, max, intro) {
+      const count = kind === 'tawaf' ? state.tawaf : state.sai;
+      const text = kind === 'tawaf' ? 'รอบ' : 'เที่ยว';
+
+      return `
+        <section class="card counter-panel">
+          <h3>${label}</h3>
+          <div class="muted">${intro}</div>
+          <div class="counter-value" aria-live="polite">${count}</div>
+          <div class="dots">
+            ${Array.from({ length: max }, (_, i) => {
+              const index = i + 1;
+              const status = index < count ? 'done' : index === count && count > 0 ? 'active' : '';
+              return `<span class="dot ${status}">${index <= count ? '✓' : index}</span>`;
+            }).join('')}
+          </div>
+
+          <button type="button" class="hold-button" data-hold="${kind}" aria-label="กดค้างเพื่อเพิ่ม ${text}">
+            <span class="progress-fill"></span>
+            <span>กดค้าง 1 วินาที เพื่อเพิ่ม${text} (${count + 1 <= max ? count + 1 : max})</span>
+          </button>
+
+          <div class="button-row">
+            <button type="button" class="secondary-button" data-undo="${kind}">↩️ ย้อนกลับ 1 ${text}</button>
+            <button type="button" class="gold-button" data-reset-single="${kind}">↺ รีเซ็ต ${text}</button>
+          </div>
+        </section>
+      `;
+    }
+
+    function renderTawaf() {
+      return renderCounter('tawaf', 'เฏาะวาฟ', 7, 'บันทึกความคืบหน้า รอบละ 1 รอบ จนถึง 7 รอบ');
+    }
+
+    function renderSai() {
+      return renderCounter('sai', 'สะแอ', 7, 'บันทึกความคืบหน้า เที่ยวละ 1 ครั้ง จนถึง 7 เที่ยว');
+    }
+
+    function renderHelp() {
+      const helpItems = [
+        ['🏨', 'กลับโรงแรม', state.hotel, 'ทางกลับโรงแรม / จัดทิศทางให้จบภารกิจ'],
+        ['🚪', 'ประตูมัสยิด', 'ประตูหมายเลข 79 / King Fahd Gate', 'สอบถามหาประตูหรือเส้นทางเข้าสถานที่'],
+        ['🚑', 'เหตุฉุกเฉินทางการแพทย์', 'ต้องการหมอ หรือ ห้องพยาบาล', 'โทร 997 หรือ ขอความช่วยเหลือจากเจ้าหน้าที่'],
+        ['🚻', 'ห้องน้ำ / จุดอาบน้ำละหมาด', 'ใช้บริเวณลานด้านนอก / ห้องน้ำใต้ดิน', 'หลีกเลี่ยงการเดินหายและการล่าช้าระหว่างจุดอาบน้ำ']
+      ];
+
+      return `
+        <section class="card">
+          <h3>บัตรช่วยเหลือฉุกเฉิน</h3>
+          <div class="help-grid">
+            ${helpItems.map(([emoji, title, detail, sub]) => `
+              <div class="help-item" role="button" tabindex="0" data-help="${title}">
+                <div class="left">
+                  <div class="emoji" aria-hidden="true">${emoji}</div>
+                  <div class="help-copy">
+                    <strong>${title}</strong>
+                    <span>${detail}</span>
+                    <span>${sub}</span>
+                  </div>
+                </div>
+                <div class="arrow" aria-hidden="true">➜</div>
+              </div>
+            `).join('')}
+          </div>
+
+          <div class="button-row">
+            <a class="button" href="tel:911">📞 911</a>
+            <a class="button" href="tel:997">📞 997</a>
+            <a class="gold-button" href="tel:${encodeURIComponent(state.phone)}">📱 ${state.phone}</a>
+          </div>
+
+          <div class="notice">หากมีเหตุฉุกเฉินหรือเกิดการล่าช้าจากการเดิน ให้ขอความช่วยเหลือจากเจ้าหน้าที่ในพื้นที่และหลีกเลี่ยงการใช้การเดินลัดที่เสี่ยงต่อการพลัดหลง</div>
+        </section>
+      `;
+    }
+
+    const screens = {
+      home: renderHome,
+      miqat: renderMiqat,
+      tawaf: renderTawaf,
+      sai: renderSai,
+      help: renderHelp
+    };
+
+    function render() {
+      updateSummary();
+      document.getElementById('screen').innerHTML = screens[state.tab]();
+      document.querySelectorAll('.nav-btn').forEach((btn) => {
+        const active = btn.dataset.tab === state.tab;
+        btn.classList.toggle('active', active);
+      });
+      bindDynamicEvents();
+      saveState();
+    }
+
+    function speakArabic(text) {
+      if (!state.sound) return;
+      if (!('speechSynthesis' in window)) return;
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = 'ar-SA';
+      u.rate = 0.85;
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(u);
+    }
+
+    function playTone(freq = 440, duration = 0.08) {
+      if (!state.sound) return;
+      try {
+        const AudioCtor = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtor) return;
+        const context = new AudioCtor();
+        const osc = context.createOscillator();
+        const gain = context.createGain();
+        osc.frequency.value = freq;
+        gain.gain.value = 0.03;
+        osc.connect(gain);
+        gain.connect(context.destination);
+        osc.start();
+        osc.stop(context.currentTime + duration);
+        setTimeout(() => { try { context.close(); } catch (_) {} }, duration * 1000 + 50);
+      } catch (error) {
+        // ignore audio errors on unsupported browsers
+      }
+    }
+
+    function incrementCounter(kind) {
+      if (kind === 'tawaf') {
+        state.tawaf = clamp(state.tawaf + 1, 0, 7);
+      }
+      if (kind === 'sai') {
+        state.sai = clamp(state.sai + 1, 0, 7);
+      }
+      state.completed = state.tawaf >= 7 && state.sai >= 7;
+      render();
+      playTone(560, 0.1);
+      if (navigator.vibrate) navigator.vibrate([40, 30, 40]);
+    }
+
+    function decrementCounter(kind) {
+      if (kind === 'tawaf') state.tawaf = clamp(state.tawaf - 1, 0, 7);
+      if (kind === 'sai') state.sai = clamp(state.sai - 1, 0, 7);
+      state.completed = state.tawaf >= 7 && state.sai >= 7;
+      render();
+      playTone(240, 0.08);
+    }
+
+    function resetSingle(kind) {
+      if (kind === 'tawaf') state.tawaf = 0;
+      if (kind === 'sai') state.sai = 0;
+      state.completed = false;
+      render();
+    }
+
+    function resetAll() {
+      const ok = window.confirm('ต้องการรีเซ็ตข้อมูลความคืบหน้าและรายการทั้งหมดหรือไม่?');
+      if (!ok) return;
+      state = structuredClone(defaults);
+      render();
+    }
+
+    function bindDynamicEvents() {
+      document.querySelectorAll('.nav-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          state.tab = btn.dataset.tab;
+          render();
+        });
+      });
+
+      document.querySelectorAll('[data-stage]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const stage = button.dataset.stage;
+          state.tab = stage === 'help' ? 'help' : stage;
+          render();
+        });
+      });
+
+      document.querySelectorAll('[data-open-stage]').forEach((button) => {
+        button.addEventListener('click', () => {
+          state.tab = button.dataset.openStage;
+          render();
+        });
+      });
+
+      document.getElementById('reset-inline-btn')?.addEventListener('click', resetAll);
+
+      document.querySelectorAll('[data-check]').forEach((input) => {
+        input.addEventListener('change', () => {
+          const key = input.dataset.check;
+          state.miqat[key] = input.checked;
+          render();
+        });
+      });
+
+      document.querySelectorAll('[data-undo]').forEach((button) => {
+        button.addEventListener('click', () => {
+          decrementCounter(button.dataset.undo);
+        });
+      });
+
+      document.querySelectorAll('[data-reset-single]').forEach((button) => {
+        button.addEventListener('click', () => {
+          resetSingle(button.dataset.resetSingle);
+        });
+      });
+
+      document.querySelectorAll('[data-help]').forEach((item) => {
+        item.addEventListener('click', () => {
+          const label = item.querySelector('strong')?.textContent || 'ช่วยเหลือ';
+          if (label.includes('ประตู')) {
+            navigator.clipboard?.writeText('ประตูหมายเลข 79 / King Fahd Gate');
+          }
+          if (label.includes('โรงแรม')) {
+            navigator.clipboard?.writeText(state.hotel);
+          }
+          playTone(390, 0.08);
+        });
+
+        item.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            item.click();
+          }
+        });
+      });
+
+      document.querySelectorAll('[data-hold]').forEach((button) => {
+        button.addEventListener('pointerdown', (event) => {
+          event.preventDefault();
+          const kind = button.dataset.hold;
+          const fill = button.querySelector('.progress-fill');
+          const startedAt = Date.now();
+
+          holdSession = {
+            kind,
+            fill,
+            interval: setInterval(() => {
+              const elapsed = Date.now() - startedAt;
+              const progress = clamp(elapsed / 1000, 0, 1) * 100;
+              fill.style.width = progress + '%';
+              if (elapsed >= 1000) {
+                clearInterval(holdSession.interval);
+                fill.style.width = '0%';
+                incrementCounter(kind);
+                holdSession = null;
+              }
+            }, 20)
+          };
+        });
+
+        const stopHold = () => {
+          if (!holdSession) return;
+          clearInterval(holdSession.interval);
+          holdSession.fill.style.width = '0%';
+          holdSession = null;
+        };
+
+        button.addEventListener('pointerup', stopHold);
+        button.addEventListener('pointerleave', stopHold);
+        button.addEventListener('pointercancel', stopHold);
+      });
+    }
+
+    function openModal() {
+      document.getElementById('hotelInput').value = state.hotel;
+      document.getElementById('phoneInput').value = state.phone;
+      document.getElementById('settingsModal').classList.remove('hidden');
+      document.getElementById('hotelInput').focus();
+    }
+
+    function closeModal() {
+      document.getElementById('settingsModal').classList.add('hidden');
+    }
+
+    document.getElementById('settingsBtn').addEventListener('click', openModal);
+    document.getElementById('closeModalBtn').addEventListener('click', closeModal);
+    document.getElementById('saveSettingsBtn').addEventListener('click', () => {
+      state.hotel = document.getElementById('hotelInput').value.trim() || defaults.hotel;
+      state.phone = document.getElementById('phoneInput').value.trim() || defaults.phone;
+      closeModal();
+      render();
+    });
+    document.getElementById('resetDataBtn').addEventListener('click', resetAll);
+    document.getElementById('settingsModal').addEventListener('click', (event) => {
+      if (event.target.id === 'settingsModal') closeModal();
+    });
+
+    document.getElementById('soundToggle').addEventListener('click', () => {
+      state.sound = !state.sound;
+      document.getElementById('soundToggle').textContent = state.sound ? '🔊' : '🔇';
+      render();
+    });
+
+    window.addEventListener('beforeinstallprompt', (event) => {
+      event.preventDefault();
+      installPrompt = event;
+      const installBtn = document.getElementById('installBtn');
+      installBtn.classList.remove('hidden');
+      installBtn.addEventListener('click', async () => {
+        if (!installPrompt) return;
+        installPrompt.prompt();
+        await installPrompt.userChoice;
+        installPrompt = null;
+        installBtn.classList.add('hidden');
+      }, { once: true });
+    });
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
+      });
+    }
+
+    document.getElementById('soundToggle').textContent = state.sound ? '🔊' : '🔇';
+    render();
+  </script>
+</body>
+</html>
